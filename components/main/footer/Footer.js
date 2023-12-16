@@ -224,14 +224,14 @@ export default function Footer() {
                     />
                   </svg>
                 </div>
-                <div className="addressadd text-sm">
+                {/* <div className="addressadd text-sm">
                   <div className="address  text-gray-200 font-bold">
                     Office Address
                   </div>
                   <div className="phone text-gray-400 my-1 text-sm">
                     4240 Atwaters center, CA 20032, USA
                   </div>
-                </div>
+                </div> */}
               </section>
               <section className="icon-section"></section>
             </div>
