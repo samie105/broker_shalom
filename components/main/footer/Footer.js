@@ -195,7 +195,7 @@ export default function Footer() {
                     E-mail Contact
                   </div>
                   <div className="phone text-gray-400 my-1 text-sm">
-                    team@thelivemarkets.com
+                    team@thelivemarkets.net
                   </div>
                 </div>
               </section>
