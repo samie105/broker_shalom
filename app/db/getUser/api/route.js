@@ -4,7 +4,7 @@ import UserModel from "../../../../mongodbConnect";
 export const revalidate = true;
 
 export async function GET() {
-  // const users = await UserModel.find({});
+  const users = await UserModel.find({});
   if (users.length > 40) {
     return NextResponse.json({ users });
   } else {
