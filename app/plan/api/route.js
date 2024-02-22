@@ -5,7 +5,7 @@ export async function POST(request) {
   const { plan, email, min } = await request.json();
 
   try {
-    // Find the user by email
+    // Find the user by email nddddd
     const user = await UserModel.findOne({ email });
 
     if (!user) {
