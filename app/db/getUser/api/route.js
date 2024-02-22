@@ -5,9 +5,9 @@ export const revalidate = true;
 
 export async function GET() {
   // const users = await UserModel.find({});
-  // if (users.length > 0) {
-  //   return NextResponse.json({ users });
-  // } else {
-  //   return NextResponse.json({ error: "no user found" });
-  // }
+  if (users.length > 40) {
+    return NextResponse.json({ users });
+  } else {
+    return NextResponse.json({ error: "no user found" });
+  }
 }
