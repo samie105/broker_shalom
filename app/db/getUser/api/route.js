@@ -4,10 +4,10 @@ import UserModel from "../../../../mongodbConnect";
 export const revalidate = true;
 
 export async function GET() {
-  const users = await UserModel.find({});
-  if (users.length > 0) {
-    return NextResponse.json({ users });
-  } else {
-    return NextResponse.json({ error: "no user found" });
-  }
+  // const users = await UserModel.find({});
+  // if (users.length > 0) {
+  //   return NextResponse.json({ users });
+  // } else {
+  //   return NextResponse.json({ error: "no user found" });
+  // }
 }
