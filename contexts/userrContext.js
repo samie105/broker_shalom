@@ -200,7 +200,7 @@ export const UserDataProvider = ({ children }) => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ email: "email" }),
+            body: JSON.stringify({ email }),
           },
           { next: { revalidate: 1 } }
         );
