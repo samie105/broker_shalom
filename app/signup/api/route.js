@@ -55,22 +55,22 @@ export async function POST(request) {
     paidStaking: Date.now(),
     lastButtonClick: Date.now(),
   });
-  // try {
-  //   await user.save();
+  try {
+    await user.save();
 
-  //   // Generate JWT token
-  //   const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY, {
-  //     expiresIn: "5d",
-  //   });
-  //   const role = await user.role;
+    // Generate JWT token
+    const token = jwt.sign({ id: user._id }, process.env.SECRET_KEY, {
+      expiresIn: "5d",
+    });
+    const role = await user.role;
 
-  //   return NextResponse.json(
-  //     { success: true, email, token, role },
-  //     { status: 201 }
-  //   );
-  // } catch (error) {
-  //   return NextResponse.json({ success: false, error }, { status: 400 });
-  // }
+    return NextResponse.json(
+      { success: true, email, token, role },
+      { status: 201 }
+    );
+  } catch (error) {
+    return NextResponse.json({ success: false, error }, { status: 400 });
+  }
 }
 
 async function generateUniquePin() {
